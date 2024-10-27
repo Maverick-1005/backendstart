@@ -53,6 +53,9 @@ app.get('/login' , (req,res) => {
 app.get('/youtube' , (req,res) => {
     res.send("<h1> heheh </h1>")
 })
+app.get('/github' , (req,res) => {
+    res.json(myGithubData)
+})
 
 // HOT RELOADING 
 app.listen(process.env.PORT, () => {
